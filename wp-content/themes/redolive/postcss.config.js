@@ -1,13 +1,9 @@
-var postcssFocusWithin = require('postcss-focus-within');
-
-module.exports = {
-    plugins: {
-        autoprefixer: {}
-    }
-};
+var tailwindcss = require('tailwindcss');
 
 module.exports = {
     plugins: [
-        postcssFocusWithin(/* pluginOptions */)
+      require('precss'),
+      require('autoprefixer'),
+      tailwindcss('./tailwind.js')
     ]
-};
+  }
