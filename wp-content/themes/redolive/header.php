@@ -20,7 +20,7 @@
 
 
 	<header class="site-header" role="banner">
-		<div class="grid-container">
+		<div class="container bg-black">
 			<nav class="site-navigation" role="navigation">
 				<?php redolive_main_navigation(); ?>
 			</nav>
