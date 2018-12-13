@@ -7,14 +7,12 @@
     "css-loader": "^2.0.0",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.10.3",
-    "sass": "^1.15.2"
-  },
-  "devDependencies": {
-    "sass": "^1.15.2"
+    "sass": "^1.15.2",
+    "tailwindcss": "^0.7.2"
   },
   "scripts": {
-    "dev": "parcel src/scss/redolive.scss; parcel src/js/redolive.js",
-    "prod": "parcel build src/scss/redolive.scss; parcel build src/js/redolive.js",
+    "dev": "./node_modules/.bin/tailwind build ./src/tailwind/tailwind.css -o ./src/scss/base/_tailwind_compiled.scss; parcel src/scss/redolive.scss; parcel src/js/redolive.js",
+    "prod": "./node_modules/.bin/tailwind build ./src/tailwind/tailwind.css -o ./src/scss/base/_tailwind_compiled.scss; parcel build src/scss/redolive.scss; parcel build src/js/redolive.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dallas Dean",

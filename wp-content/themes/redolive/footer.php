@@ -16,7 +16,6 @@
 	</div><!-- #content -->
 
 	<footer class="site-footer bg-purple text-white">
-	FOOTER
 		<div class="site-info">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
