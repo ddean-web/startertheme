@@ -1,13 +1,20 @@
+
+a {
+  background-color: #3490dc;
+  color: #ffed4a;
+  font-weight: 700;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: .25rem;
+}
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
  *
  * You can see the styles here:
  * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
  */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -506,14 +513,6 @@ table {
   border-collapse: collapse;
 }
 
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
-
 .container {
   width: 100%;
 }
@@ -543,28 +542,12 @@ table {
 }
 
 /**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- */
-@import "../src/css/buttons/buttons.css";
+* Add custom component styles here
+*/
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
  */
 
 .list-reset {

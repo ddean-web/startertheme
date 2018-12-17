@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Red Olive starter theme",
   "dependencies": {
+    "buttons": "^0.1.2",
     "css-loader": "^2.0.0",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.10.3",
@@ -11,8 +12,8 @@
     "tailwindcss": "^0.7.2"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/tailwind build ./src/css/tailwind.css -o ./dist/redolive.css; parcel ./src/css/redolive.css; parcel src/js/redolive.js",
-    "prod": "./node_modules/.bin/tailwind build ./src/css/tailwind.css -o ./dist/redolive.css; parcel build ./dist/redolive.css; parcel build src/js/redolive.js",
+    "dev": "parcel ./src/css/redolive.css; parcel src/js/redolive.js",
+    "prod": "parcel build ./src/css/redolive.css; parcel build src/js/redolive.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dallas Dean",
