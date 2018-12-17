@@ -11,8 +11,8 @@
     "tailwindcss": "^0.7.2"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/tailwind build ./src/tailwind/tailwind.css -o ./src/scss/base/_tailwind_compiled.scss; parcel src/scss/redolive.scss; parcel src/js/redolive.js",
-    "prod": "./node_modules/.bin/tailwind build ./src/tailwind/tailwind.css -o ./src/scss/base/_tailwind_compiled.scss; parcel build src/scss/redolive.scss; parcel build src/js/redolive.js",
+    "dev": "./node_modules/.bin/tailwind build ./src/css/tailwind.css -o ./dist/redolive.css; parcel ./src/css/redolive.css; parcel src/js/redolive.js",
+    "prod": "./node_modules/.bin/tailwind build ./src/css/tailwind.css -o ./dist/redolive.css; parcel build ./dist/redolive.css; parcel build src/js/redolive.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dallas Dean",
