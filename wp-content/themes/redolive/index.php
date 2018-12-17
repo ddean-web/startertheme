@@ -16,29 +16,23 @@
 
 get_header();
 ?>
-
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php
-		if ( have_posts() ) {
-
-			// Load posts loop.
-			while ( have_posts() ) {
+	<div id="primary" class="content-area">
+		<main class="container mx-auto">
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
 				the_post();
-				the_title();
-			}
+					the_title();
+					the_content();
 
-		} else {
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) {
+					comments_template();
+				}
 
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
-
-		}
-		?>
-		
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
-
+			endwhile; // End of the loop.
+			?>
+		</div>
+	</div><!-- #primary -->
 <?php
 get_footer();

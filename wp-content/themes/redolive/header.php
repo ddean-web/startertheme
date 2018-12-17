@@ -19,8 +19,8 @@
 	<body <?php body_class(); ?>>
 
 
-	<header class="site-header" role="banner">
-		<div class="container bg-black">
+	<header class="site-header bg-black" role="banner">
+		<div class="container mx-auto">
 			<nav class="site-navigation" role="navigation">
 				<?php redolive_main_navigation(); ?>
 			</nav>
